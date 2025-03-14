@@ -26,10 +26,23 @@
             </div>
             <button type="submit" class="login-btn" onclick="func()">Login</button>
             <a href="#" class="forgot-password">Forgot Password?</a>
-            
-<script>
-    windows.location="des.html"
+
         </form>
+        <script>
+              function func(){
+              var email = document.getElementById("username").value;
+              var pass = document.getElementById("password").value;
+             if(email == 'SOHAM EDITZ 12' && pass == '123456'){
+                alert("successfull")
+                window.location.assign("des.html")
+               
+             }
+              else{
+                alert("Wrong Entry Invalid")
+              }
+
+              }
+        </script>
     </div>
-</script>
+
 </html>
